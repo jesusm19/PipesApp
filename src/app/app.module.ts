@@ -1,10 +1,11 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
-import { AppComponent } from './app.component';
-import { PrimeNgModule } from './prime-ng/prime-ng.module';
 import { SharedModule } from './shared/shared.module';
 import { VentasModule } from './ventas/ventas.module';
+
+import { AppComponent } from './app.component';
+import { AppRouterModule } from './app-router.module';
 
 @NgModule({
   declarations: [
@@ -13,8 +14,8 @@ import { VentasModule } from './ventas/ventas.module';
   imports: [
     BrowserModule,
     SharedModule,
-    PrimeNgModule,
-    VentasModule
+    VentasModule,
+    AppRouterModule
   ],
   providers: [],
   bootstrap: [AppComponent]
