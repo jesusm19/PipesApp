@@ -47,6 +47,14 @@
                 <li>Fecha | date : 'short'</li>
                 <li>Fecha | date : 'long'</li>
                 <li>Fecha | date : 'Personalized'</li>
+                <li>Fecha | date : 'Personalized'</li>
+            </ul>
+
+            <hr>
+            <ul>
+                <li>fecha | date : 'long': 'GMT-7'</li>
+                <li>fecha | date : 'long': 'GMT-5'</li>
+                <li>fecha | date : 'long': '': 'it'</li>
             </ul>
         </p-card>
     </div>
@@ -58,7 +66,16 @@
                 <li>{{fecha | date : 'short'}} </li>
                 <li>{{fecha | date : 'long'}} </li>
                 <li>{{fecha | date : 'MMMM-YYYY'}} </li>
+                <li>{{fecha | date : 'MMMM dd, YYYY'}} </li>
             </ul>
+
+            <hr>
+            <ul>
+                <li>{{fecha | date : 'long': 'GMT-7'}} </li>
+                <li>{{fecha | date : 'long': 'GMT-5'}} </li>
+                <li>{{fecha | date : 'long': '': 'it'}} </li>
+            </ul>
+
         </p-card>
     </div>
 </div>
